@@ -1,0 +1,41 @@
+﻿# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Generated retrieval indexes and model/cache artifacts
+vectorstore/**
+!vectorstore/.gitkeep
+.cache/
+.cache/**
+
+# Temporary files, logs, and test artifacts
+*.tmp
+*.temp
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Frontend dependencies, builds, and local browser configuration
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/.vite/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

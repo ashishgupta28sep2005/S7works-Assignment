@@ -1,0 +1,31 @@
+﻿# Core API and validation
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.8,<3.0
+python-dotenv>=1.0,<2.0
+
+# Agent and retrieval stack
+langchain>=0.3,<1.0
+langchain-core>=0.3.86,<0.4
+langchain-community>=0.3,<1.0
+langchain-huggingface>=0.1,<1.0
+langchain-groq==0.3.8
+xxhash==3.5.0
+sentence-transformers==5.7.0
+transformers==4.57.1
+regex==2024.11.6
+faiss-cpu==1.16.0
+numpy>=1.26,<3.0
+torch>=2.2,<3.0
+
+# Phase 2 document processing (PyMuPDF/pdfplumber validated in Python 3.12.10)
+PyMuPDF>=1.24,<2.0
+pdfplumber>=0.11,<1.0
+
+# MySQL persistence
+SQLAlchemy>=2.0,<3.0
+PyMySQL>=1.1,<2.0
+
+# Development and tests
+pytest>=8.0,<9.0
+httpx>=0.27,<1.0
